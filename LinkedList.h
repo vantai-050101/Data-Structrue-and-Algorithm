@@ -105,6 +105,15 @@ public:
 			delete p;
 		}
 	}
+	void sort() {
+		for(Node<T>* i= this->pHead; i!=NULL; i=i->getpNext())
+			for(Node<T>* j = i->getpNext(); j!=NULL; j=j->getpNext())
+				if (i->getData() > j->getData()) {
+					T temp = i->getData();
+					i->setData(j->getData());
+					j->setData(temp);
+				}
+	}
 	void print()const {
 		for (Node<T>* i = this->pHead; i != NULL; i = i->getpNext())
 			cout << i->getData() << '\t';
