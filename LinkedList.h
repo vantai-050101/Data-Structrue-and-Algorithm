@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
+// class Node
 template <class T>
 class Node {
 private:
@@ -32,6 +33,7 @@ public:
 	}
 };
 
+// class LinkedList
 template <class T>
 class LinkedList {
 private:
