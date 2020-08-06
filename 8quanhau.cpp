@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#define MAX 6
+#define MAX 8
 using namespace std;
 // init and print Matrix
 int matrix[MAX][MAX] = { 0 };
@@ -107,6 +107,7 @@ void quatrung(int count = 0) {
 }
 
 int main() {
+	
 	cout << "\nHoan vi to hop: ";
 	hoanvi();
 	cout << "\nMa di tuan: ";
